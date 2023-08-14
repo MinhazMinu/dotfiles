@@ -16,3 +16,7 @@ rm -rf $HOME/.local/bin/deliver
 
 ln -sf $DOTFILES/scripts/t $HOME/.local/bin/t
 ln -sf $DOTFILES/scripts/deliver $HOME/.local/bin/deliver
+
+# Tmux
+rm -rf $HOME/.config/nvim
+ln -sf $DOTFILES/nvim $HOME/.config/nvim
