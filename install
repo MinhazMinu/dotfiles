@@ -2,6 +2,7 @@
 
 DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# test
 
 # Tmux
 rm -rf $HOME/.tmux.conf
