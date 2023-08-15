@@ -43,7 +43,7 @@ use({
       bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
     })
 
-    vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
+    vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#444444' })
 
     vim.api.nvim_set_hl(0, 'StatusLineNonText', {
       fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
@@ -161,7 +161,14 @@ use({
   end,
 })
 
-
+-- File tree sidebar
+use({
+  'kyazdani42/nvim-tree.lua',
+  requires = 'kyazdani42/nvim-web-devicons',
+  config = function()
+    require('user/plugins/nvim-tree')
+  end,
+})
 -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
 if packer_bootstrap then
