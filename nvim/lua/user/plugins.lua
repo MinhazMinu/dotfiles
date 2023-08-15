@@ -157,10 +157,9 @@ use({
     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
   },
   config = function()
-    require('telescope').setup()
+    require('user/plugins/telescope')
   end,
 })
-
 
 
 -- Automatically set up your configuration after cloning packer.nvim
