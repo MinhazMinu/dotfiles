@@ -20,3 +20,7 @@ ln -sf $DOTFILES/scripts/deliver $HOME/.local/bin/deliver
 # Tmux
 rm -rf $HOME/.config/nvim
 ln -sf $DOTFILES/nvim $HOME/.config/nvim
+
+
+rm -rf $HOME/.config/phpactor
+ln -sf $DOTFILES/nvim $HOME/.config/phpactor
